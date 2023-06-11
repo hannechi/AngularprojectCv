@@ -1,0 +1,11 @@
+<p [ngStyle]="{
+'color':'red',
+'background-color':bgcolor,
+'font-size':fonttaille
+}">
+    ngstylecompoennt works!
+</p>
+<input type="text" [(ngModel)]="bgcolor">
+<br>
+<br>
+<input type="number" #text (change)="changesize(text)">

@@ -1,0 +1,23 @@
+<!-- <div *ngIf="personnes">
+    <div class="col-md-4 col-sm-4" *ngFor="let personne of personnes">
+    <div class="card" style="width: 18rem;" >
+    <img class="card-img-top" src="assets/images/{{personne.path}}" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">{{personne.name}} {{personne.firstname}}</p>
+    </div>
+  </div>
+  </div>
+
+</div> -->
+<div class="row" *ngIf="personnes">
+    <div class="col-md-4 col-sm-4" *ngFor="let personne of personnes">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/{{personne.path}}" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">{{personne.name}} {{personne.firstname}}  <i class="fa fa-trash fa-2x" (click)="debaucher(personne)" aria-hidden="true" style="color: red;"></i></p>
+               
+            </div>
+        </div>
+    </div>
+
+</div>

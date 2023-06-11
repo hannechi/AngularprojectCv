@@ -1,0 +1,14 @@
+<input #text type="text" [value]="title" (change)="changetitle(text)">
+
+your text is : {{title}}
+
+<br>
+<br>
+<input  type="text" [(ngModel)]="title1">
+
+your text is : {{title1}}
+<br>
+<br>
+<app-fils (sendRequesttoparent)="processReq($event)" [titleoffils]="title1"></app-fils>
+
+
