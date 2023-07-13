@@ -1,0 +1,15 @@
+<form #form="ngForm">
+<label for="login">Login</label>
+<input id="login" type="text" ngModel name="login" class="form-control">
+<label for="password">Password</label>
+<input type="text" id="password" ngModel name="password" class="form-control">
+<br>
+<input type="file" class="form-control" (change)="handleFileInput($event)">
+<br>
+<button (click)="Login(form)" class="btn btn-success">Login</button>
+</form>
+
+
+
+
+<img [src]="image" alt="">

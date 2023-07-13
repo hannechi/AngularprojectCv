@@ -13,6 +13,14 @@ import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { NgstylecompoenntComponent } from './directives/ngstylecompoennt/ngstylecompoennt.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmbaucherComponent } from './cvTech/embaucher/embaucher.component';
+import { Page2Component } from './page2/page2.component';
+import { ROUTING } from './app-rooting';
+import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { DetailComponent } from './cvTech/detail/detail.component';
+import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +32,21 @@ import { EmbaucherComponent } from './cvTech/embaucher/embaucher.component';
     ItemCvComponent,
     DetailCvComponent,
     NgstylecompoenntComponent,
-    EmbaucherComponent
+    EmbaucherComponent,
+    Page2Component,
+    HeaderComponent,
+    RouterSimulatorComponent,
+    DetailComponent,
+    LoginComponent,
+    MainComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
